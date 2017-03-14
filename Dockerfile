@@ -1,4 +1,4 @@
-FROM coq:8.6
+FROM okuisatoshi/docker_coq_ssr
 RUN sudo apt-get update && sudo apt-get install -yq wget unzip
 RUN opam install -y depext && opam depext -y frama-c
 RUN opam install -y frama-c
